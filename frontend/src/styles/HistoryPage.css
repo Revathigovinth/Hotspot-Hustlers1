@@ -1,0 +1,229 @@
+/* HistoryPage.css */
+.history-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.history-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.order-total-badge {
+  background: #f0f0f0;
+  color: #555;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-card {
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.order-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.order-left {
+  flex: 1;
+}
+
+.order-id {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.order-meta {
+  font-size: 0.82rem;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.order-preview {
+  font-size: 0.92rem;
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.order-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  min-width: 90px;
+}
+
+.order-amount {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.status-delivered {
+  background: #e8f8f0;
+  color: #27ae60;
+}
+
+.status-cancelled {
+  background: #fdf0f0;
+  color: #e74c3c;
+}
+
+.status-pending {
+  background: #fff8e6;
+  color: #f39c12;
+}
+
+.expand-icon {
+  font-size: 0.7rem;
+  color: #ccc;
+}
+
+/* Expanded Details */
+.order-details {
+  padding: 1.25rem 1.5rem 1.5rem;
+  border-top: 1px solid #f5f5f5;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.details-section h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 0 0 0.6rem;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.items-table th {
+  text-align: left;
+  padding: 6px 8px;
+  color: #aaa;
+  font-weight: 600;
+  font-size: 0.78rem;
+  border-bottom: 1px solid #eee;
+}
+
+.items-table td {
+  padding: 8px 8px;
+  color: #444;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.items-table tr:last-child td {
+  border-bottom: none;
+}
+
+.address-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.order-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.reorder-btn {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reorder-btn:hover {
+  background: #e55a27;
+}
+
+.reorder-btn.reorder-success {
+  background: #27ae60;
+}
+
+.invoice-btn {
+  background: white;
+  color: #555;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.invoice-btn:hover {
+  border-color: #aaa;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.no-orders span {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}

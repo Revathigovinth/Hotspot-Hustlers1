@@ -1,0 +1,218 @@
+/* HomePage.css */
+.home-page {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero Banner */
+.hero-banner {
+  width: 100%;
+  height: 480px;
+  background: 
+    linear-gradient(135deg, rgba(20,10,5,0.78) 0%, rgba(255,107,53,0.55) 100%),
+    url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1400&q=80') center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: #ff6b35;
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: white;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 1.75rem;
+  max-width: 460px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-hero-primary {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-hero-primary:hover {
+  background: #e55a27;
+  transform: translateY(-2px);
+}
+
+.btn-hero-secondary {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 14px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-hero-secondary:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.hero-welcome {
+  margin-top: 1.25rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+}
+
+/* Features Strip */
+.features-strip {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+  border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  padding: 16px 28px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 20px;
+  background: #e8e8e8;
+}
+
+/* Menu Grid */
+.home-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.2rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1.5px solid #f0f0f0;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.menu-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+  transform: translateY(-2px);
+}
+
+.menu-emoji {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 3px;
+}
+
+.menu-tag {
+  font-size: 0.78rem;
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+.menu-price {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  flex-shrink: 0;
+}
+
+.add-btn {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-btn:hover {
+  background: #e55a27;
+}
+
+@media (max-width: 600px) {
+  .hero-title { font-size: 2rem; }
+  .hero-banner { height: 400px; }
+  .features-strip { gap: 0; }
+  .feature-divider { display: none; }
+}
